@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Страна</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+    <div class="header">
+      <div class="container">
+        <div class="header__wrap"></div>
+      </div>
+    </div> 
+ <!-- /header -->
+
+      <div class="nav-breadcrumb">
+        <div class="container md-p-0">
+          <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                <li class="breadcrumb-item"><a href="#">Экскурсии</a></li>
+                <li class="breadcrumb-item"><a href="#">Россия</a></li>
+                <li class="breadcrumb-item"><a href="#">Автомобильные</a></li>
+                <li class="breadcrumb-item active" aria-current="page"><a href="#">Сочи</a></li>
+              </ol>
+            </nav>
+        </div>
+      </div>
+      <div class="container md-p-0">
+        <h1>Экскурсии по России</h1>          
+      </div>	 
+      <!-- /nav-breadcrumb -->
+
+      <div class="container container-country">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 md-p-0" >
+            <ul class="type-excursions">
+              <li class="type-excursions__item"><a href="#type-all" class="nav-link js-tab-control active">Все</a></li>
+              <li class="type-excursions__item"><a href="#type-auto" class="nav-link js-tab-control">Автомобильные</a></li>
+              <li class="type-excursions__item"><a href="#type-walk"  class="nav-link js-tab-control">Пешие</a></li>
+              <li class="type-excursions__item"><a href="#type-auto-rent" class="nav-link js-tab-control">Авто в аренду</a></li>
+            </ul>
+
+            <div class="type-excursions__content">
+              <ul>
+                <li id="type-all" class="js-tab-content show">
+                  <h3>Куда хотите поехать?</h3>
+
+                        <div class="row">
+                          <div class="col-lg-3 col-md-6 col-sm-12 md-p-12">
+                            <a href="#"  class="card-link">
+                            <div class="card img-fluid card-country">                              
+                              <img class="card-country__img" src="img/country/sochi.jpg" alt="Сочи" >
+                              <div class="card-img-overlay">
+                                <h4 class="card-title">Сочи</h4>
+                                <p class="card-excurs">255 экскурсий</p>
+                                <p class="card-price">от 39 900 ₽</p>
+                                 <a href="#" type="button" class="btn-transparent">Подробнее</a>
+                              </div>
+                            </div>
+                          </a>
+                          </div> <!-- 1 карточка -->
+                          <div class="col-lg-3 col-md-6 col-sm-12 md-p-12">
+                            <a href="#"  class="card-link">
+                            <div class="card img-fluid card-country" >
+                              <img class="card-country__img" src="img/country/msk.jpg" alt="Москва" style="width:100%">
+                              <div class="card-img-overlay">
+                                <h4 class="card-title">Москва</h4>
+                                <p class="card-excurs">1 235 экскурсий</p>
+                                <p class="card-price">от 49 900 ₽</p>
+                                 <a href="#" type="button" class="btn-transparent">Подробнее</a>
+                              </div>
+                            </div>
+                          </a>
+                          </div> <!-- 2 карточка -->
+                          <div class="col-lg-3 col-md-6 col-sm-12 md-p-12">
+                            <a href="#"  class="card-link">
+                              <div class="card img-fluid card-country">
+                              <img class="card-country__img" src="img/country/s-p.jpg" alt="Санкт-Петербург" style="width:100%">
+                              <div class="card-img-overlay">
+                                <h4 class="card-title">Санкт-Петербург</h4>
+                                <p class="card-excurs">835 экскурсий</p>
+                                <p class="card-price">от 149 900 ₽</p>
+                                 <a href="#" type="button" class="btn-transparent">Подробнее</a>
+                              </div>
+                            </div>
+                            </a>                      
+                          </div> <!-- 3 карточка -->
+                          <div class="col-lg-3 col-md-6 col-sm-12 md-p-12">
+                            <a href="#"  class="card-link">
+                              <div class="card img-fluid card-country">
+                                <img class="card-country__img" src="img/country/kazan.jpg" alt="Казань" style="width:100%">
+                                <div class="card-img-overlay">                                
+                                  <h4 class="card-title">Казань</h4>
+                                  <p class="card-excurs">835 экскурсий</p>
+                                  <p class="card-price">от 149 900 ₽</p>
+                                <a href="#" type="button" class="btn-transparent">Подробнее</a>
+                              </div>
+                            </div>
+                            </a>
+                          </div> <!-- 4 карточка -->
+                          <div class="col-lg-3 col-md-6 col-sm-12 md-p-12">
+                          <a href="#"  class="card-link">
+                            <div class="card img-fluid card-country">
+                              <img class="card-country__img" src="img/country/kazan.jpg" alt="Казань" style="width:100%">
+                              <div class="card-img-overlay">
+                                <h4 class="card-title">Казань</h4>
+                                <p class="card-excurs">835 экскурсий</p>
+                                <p class="card-price">от 149 900 ₽</p>
+                                 <a href="#" type="button" class="btn-transparent">Подробнее</a>
+                              </div>
+                            </div>
+                          </a>
+                          </div> <!-- 5 карточка -->
+                          <div class="col-lg-3 col-md-6 col-sm-12 md-p-12">
+                            <a href="#"  class="card-link">
+                              <div class="card img-fluid card-country">
+                              <img class="card-country__img" src="img/country/kazan.jpg" alt="Казань" style="width:100%">
+                              <div class="card-img-overlay">
+                                <h4 class="card-title">Казань</h4>
+                                <p class="card-excurs">835 экскурсий</p>
+                                <p class="card-price">от 149 900 ₽</p>
+                                 <a href="#" type="button" class="btn-transparent">Подробнее</a>
+                              </div>
+                            </div>
+                            </a>
+                          </div> <!-- 6 карточка -->
+                          <div class="col-lg-3 col-md-6 col-sm-12 md-p-12">
+                            <a href="#"  class="card-link">
+                            <div class="card img-fluid card-country">
+                              <img class="card-country__img" src="img/country/ekb.jpg" alt="Екатеринбург" style="width:100%">
+                              <div class="card-img-overlay">
+                                <h4 class="card-title">Казань</h4>
+                                <p class="card-excurs">835 экскурсий</p>
+                                <p class="card-price">от 149 900 ₽</p>
+                                 <a href="#" type="button" class="btn-transparent">Подробнее</a>
+                              </div>
+                            </div>
+                            </a>
+                          </div> <!-- 7 карточка -->
+                          <div class="col-lg-3 col-md-6 col-sm-12 md-p-12">
+                            <a href="#"  class="card-link">
+                              <div class="card img-fluid card-country">
+                                <img class="card-country__img" src="img/country/sochi.jpg" alt="Сочи" style="width:100%">
+                                <div class="card-img-overlay">
+                                  <h4 class="card-title">Сочи</h4>
+                                  <p class="card-excurs">835 экскурсий</p>
+                                  <p class="card-price">от 149 900 ₽</p>
+                                  <a href="#" type="button" class="btn-transparent">Подробнее</a>
+                                </div>
+                              </div>
+                            </a>
+                          </div> <!-- 8 карточка -->
+                          
+                        </div>
+
+                        <div class="item-center">
+                          <a href="#" class="btn-green" type="button">Показать ещё</a>
+                        </div>
+                
+                </li> <!-- конец 1 вкладки -->
+                <!-- Все экскурсии-->
+                <li id="type-auto" class="js-tab-content ">
+                  <h3>Куда хотите поехать?</h3>
+
+                        <div class="row">
+                          <div class="col-lg-3 col-md-6 col-sm-12 md-p-12">
+                            <a href="#"  class="card-link">
+                            <div class="card img-fluid card-country">
+                              <img class="card-country__img" src="img/country/sochi.jpg" alt="Сочи" style="width:100%">
+                              <div class="card-img-overlay">
+                                <h4 class="card-title">Сочи</h4>
+                                <p class="card-excurs">255 экскурсий</p>
+                                <p class="card-price">от 39 900 ₽</p>
+                              </div>
+                            </div>
+                            </a>
+                          </div> <!-- 1 карточка -->
+                          <div class="col-lg-3 col-md-6 col-sm-12 md-p-12">
+                            <a href="#"  class="card-link">
+                              <div class="card img-fluid card-country">
+                              <img class="card-country__img" src="img/country/sochi.jpg" alt="Сочи" style="width:100%">
+                              <div class="card-img-overlay">
+                                <h4 class="card-title">Сочи</h4>
+                                <p class="card-excurs">255 экскурсий</p>
+                                <p class="card-price">от 39 900 ₽</p>
+                              </div>
+                            </div>
+                            </a>
+                          </div> <!-- 2 карточка -->
+                          <div class="col-lg-3 col-md-6 col-sm-12 md-p-12">
+                            <a href="#"  class="card-link">
+                              <div class="card img-fluid card-country">
+                              <img class="card-country__img" src="img/country/sochi.jpg" alt="Сочи" style="width:100%">
+                              <div class="card-img-overlay">
+                                <h4 class="card-title">Сочи</h4>
+                                <p class="card-excurs">255 экскурсий</p>
+                                <p class="card-price">от 39 900 ₽</p>
+                              </div>
+                            </div>
+                            </a>                      
+                          </div> <!-- 3 карточка -->
+                        </div>
+                </li> <!-- конец 2 вкладки -->
+                <!-- Автомобильные экскурсии-->
+
+                <li id="type-walk" class="js-tab-content ">
+                  <div>Содержимое 3-й вкладки</div>
+                </li> <!-- конец 3 вкладки -->
+                <!-- Пешие экскурсии-->
+                <li id="type-auto-rent" class="js-tab-content ">
+                  <div>Содержимое 4-й вкладки</div>
+                </li> <!-- конец 4 вкладки -->
+                <!-- Авто в аренду экскурсии-->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div><!-- конец карточек-->
+  
+      <section>
+        <div class="container  md-p-0">
+          <div class="row">
+            <div class="col-md-12 ">
+              <h3>Не можете определиться? <span class="mobile-none">Посмотрите на экскурсии</span></h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 md-p-12">
+               <a href="#"  class="card-link">
+                 <div class="card">
+                  <div class="card-image__wrap">
+                    <img src="img/attractions/Istanbul-2.jpg" class="card-image img-fluid" alt="Автомобильная экскурсия по Стамбулу">
+                     <span>Сочи</span>
+                  </div>
+                  
+                  <div class="card-body">
+                    <div class="card-feedback">
+                      <p class="card-feedback__stars">
+                        <img src="icons/star-full.svg" alt="звезда">
+                        <img src="icons/star-full.svg" alt="звезда">
+                        <img src="icons/star-full.svg" alt="звезда">
+                        <img src="icons/star-full.svg" alt="звезда">
+                        <img src="icons/star-full.svg" alt="звезда">
+                      </p>
+                      <p>802 отзыва</p>
+                    </div>
+
+                    <p class="card-name">Автомобильная экскурсия по Стамбулу</p>
+
+                    <div class="card__clock-price">
+                      <p class="card__clock">
+                        <span><img src="icons/clock.svg" alt="время"></span>
+                        5 часов
+                      </p>
+                      <p class="card__price">от €333,00</p>
+                    </div>
+
+                  </div>
+                </div>
+               </a>
+              
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 md-p-12">
+               <a href="#"  class="card-link">
+                  <div class="card">
+                  <div class="card-image__wrap">
+                    <img src="img/attractions/Istanbul-2.jpg" class="card-image img-fluid" alt="Автомобильная экскурсия по Стамбулу">
+                     <span>Сочи</span>
+                  </div>
+                  
+                  <div class="card-body">
+                    <div class="card-feedback">
+                      <p class="card-feedback__stars">
+                        <img src="icons/star-full.svg" alt="звезда">
+                        <img src="icons/star-full.svg" alt="звезда">
+                        <img src="icons/star-full.svg" alt="звезда">
+                        <img src="icons/star-full.svg" alt="звезда">
+                        <img src="icons/star-full.svg" alt="звезда">
+                      </p>
+                      <p>802 отзыва</p>
+                    </div>
+
+                    <p class="card-name">Автомобильная экскурсия по Стамбулу</p>
+
+                    <div class="card__clock-price">
+                      <p class="card__clock">
+                        <span><img src="icons/clock.svg" alt="время"></span>
+                        5 часов
+                      </p>
+                      <p class="card__price">от €333,00</p>
+                    </div>
+
+                  </div>
+                </div>
+               </a>
+             
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 md-p-12">
+              <a href="#"  class="card-link">
+                 <div class="card">
+                  <div class="card-image__wrap">
+                    <img src="img/attractions/Istanbul-2.jpg" class="card-image img-fluid" alt="Автомобильная экскурсия по Стамбулу">
+                    <span>Сочи</span>
+                  </div>
+                  
+                  <div class="card-body">
+                    <div class="card-feedback">
+                      <p class="card-feedback__stars">
+                        <img src="icons/star-full.svg" alt="звезда">
+                        <img src="icons/star-full.svg" alt="звезда">
+                        <img src="icons/star-full.svg" alt="звезда">
+                        <img src="icons/star-full.svg" alt="звезда">
+                        <img src="icons/star-full.svg" alt="звезда">
+                      </p>
+                      <p>802 отзыва</p>
+                    </div>
+
+                    <p class="card-name">Автомобильная экскурсия по Стамбулу</p>
+
+                    <div class="card__clock-price">
+                      <p class="card__clock">
+                        <span><img src="icons/clock.svg" alt="время"></span>
+                        5 часов
+                      </p>
+                      <p class="card__price">от €333,00</p>
+                    </div>
+
+                  </div>
+                </div>
+              </a>
+             
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 md-p-12">
+              <a href="#"  class="card-link">
+                 <div class="card">
+                  <div class="card-image__wrap">
+                    <img src="img/attractions/Istanbul-2.jpg" class="card-image img-fluid" alt="Автомобильная экскурсия по Стамбулу">
+                     <span>Сочи</span>
+                  </div>
+                  
+                  <div class="card-body">
+                    <div class="card-feedback">
+                      <p class="card-feedback__stars">
+                        <img src="icons/star-full.svg" alt="звезда">
+                        <img src="icons/star-full.svg" alt="звезда">
+                        <img src="icons/star-full.svg" alt="звезда">
+                        <img src="icons/star-full.svg" alt="звезда">
+                        <img src="icons/star-full.svg" alt="звезда">
+                      </p>
+                      <p>802 отзыва</p>
+                    </div>
+
+                    <p class="card-name">Автомобильная экскурсия по Стамбулу</p>
+
+                    <div class="card__clock-price">
+                      <p class="card__clock">
+                        <span><img src="icons/clock.svg" alt="время"></span>
+                        5 часов
+                      </p>
+                      <p class="card__price">от €333,00</p>
+                    </div>
+
+                  </div>
+                </div>
+              </a>
+             
+            </div>
+          </div>
+             <div class="item-center">
+                          <a href="#" class="btn-green" type="button">Показать ещё</a>
+                        </div>
+        </div>
+      </section>
+
+      <section class="decription decription-country">
+    <div class="container ">
+      <div class="row">
+        <div class="col-lg-9 col-md-12 md-p-0">
+          <h3>Путешествие - это маленькая жизнь</h3>
+          <p>Путешествие одно из самых любимых занятий большинства людей. Почему многие так любят путешествовать? Все просто, когда человек путешествует, он познает окружающий мир и самого себя. На земле очень много необычных уголков, красивых мест, которые заставляют пережить потрясающие эмоции, чувства.</p>
+          <p>Во время путешествия наполняешься энергией, силой, положительными эмоциями. Начинаешь ощущать гармонию и тесную связь человека с природой. Удивительные страны, красивые пейзажи всегда манили романтиков. Многие писатели, музыканты, художники создавали произведения искусства после путешествий, которое наполняли их новыми ощущениями, меняли их взгляды на жизнь.</p>
+
+          <h4>5 причин отправиться в путешествие</h4>
+
+          <ul class="decription__ul-text">
+            <li>В путешествии вы расширите свой кругозор</li>
+            <li>Путешествовать - это не так дорого, как кажется</li>
+            <li>В путешествии вы сделаете уникальные фотографии</li>
+            <li>После путешествия вы уже никогда не будете прежними</li>
+            <li>В путешествии вы получите больше впечатлений, чем где бы то ни было</li>
+          </ul>
+
+          <ol class="decription__ol-text">
+            <li>В путешествии вы расширите свой кругозор</li>
+            <li>Путешествовать - это не так дорого, как кажется</li>
+            <li>В путешествии вы сделаете уникальные фотографии</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>
